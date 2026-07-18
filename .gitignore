@@ -1,2 +1,12 @@
 .obsidian/
 Noah Notes/
+
+# Altium files
+History/
+__Previews/
+__ProjectOutputs/
+ProjectOutputs*/
+Project Logs*/
+*.zip
+*.PcbDoc.htm
+*.SchDoc.htm
