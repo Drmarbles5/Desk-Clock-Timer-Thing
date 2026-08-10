@@ -29,6 +29,11 @@ flowchart TD
 
 ## Hardware Design Notes
 
+### Layer Stack-Up
+
+The board is 2-layers. Top and bottom copper layers are used for signal routing and
+ground pours, with a solid reference ground plane beneath the RF and USB traces.
+
 ### 2.4 GHz Antenna
 
 The board uses a **meander PCB antenna** for the 2.4 GHz Bluetooth link. The antenna is designed to 
@@ -37,10 +42,10 @@ the 2400–2480 MHz operating band.
 
 ### RF Signal Routing & Integrity
 
-- The RF trace is routed as a **coplanar waveguide with ground plane (CPWG)**, with the
+- The RF trace is routed as a **coplanar waveguide**, with the
   reference ground on the layer directly beneath the trace to keep the characteristic
   impedance controlled at 50 ohms.
-- **Shielding (stitching) vias** are placed along the RF trace to stitch the top-side ground
+- **Shielding vias** are placed along the RF trace to stitch the top-side ground
   pour to the inner ground plane. These vias form a cage around the trace that reduces
   coupling and keeps the impedance consistent along the run.
 - The antenna keep-out zone is clear of copper pours and ground planes to avoid detuning the
