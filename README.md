@@ -20,8 +20,9 @@ flowchart TD
 	end
 
 	subgraph Outputs
-	FO1(Pomodoro Timer)
-	FO2(Media Display)
+	FO1(Clock)
+	FO2(Pomodoro Timer)
+	FO3(Media Display)
 	end
 
 	Inputs --> PCB --> Outputs
