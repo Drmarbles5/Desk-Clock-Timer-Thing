@@ -24,7 +24,7 @@ flowchart TD
 	FO2(Media Display)
 	end
 
-	Inputs --> On_Device --> Functions_/_Outputs
+	Inputs --> PCB --> Outputs
 ```
 
 ## Hardware Design Notes
