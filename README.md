@@ -1,24 +1,31 @@
 # Desk Clock Timer
 
-Compact Bluetooth desk clock that combines Pomodoro timing, and media display.
+Compact STM32-controlled Bluetooth desk clock powered over USB-C with a [4200 mAh lithium battery](https://www.amazon.ca/4200mah-Rechargeable-Lithium-Replacement-Electronic/dp/B095BP7V1D?th=1) for portability. It connects to Windows/Linux over USB and Bluetooth for time sync, alarm setup, and media data, and drives a [Waveshare Pico-ePaper 7.5](https://www.waveshare.com/pico-epaper-7.5.htm) E-ink display to show the clock, Pomodoro timer, and live Spotify/media information.
 
-- Full-speed USB interface for time sync and alarm setup.
-- Bluetooth connectivity for timer and media updates.
-- E-ink display to show the clock, Pomodoro timer, and live Spotify/media information, driven directly by the STM32.
-- 4200 mAh lithium battery rechargeable via USB-C for portability.
+> Assembly and firmware are in progress. Images coming soon.
 
-<details>
-  <summary>PCB render coming soon</summary>
-</details>
+## Architecture
 
-## Design Notes
+```mermaid
+flowchart TD
+	subgraph Inputs
+	I1("`Laptop/Computer (wired)`")
+	I2(Bluetooth)
+	end
 
-Design notes and requirements are tracked in the [Public Notes](Public%20Notes) folder:
+	subgraph On_Device
+	D1(Power)
+	D2(Display)
+	D3(Controller)
+	end
 
-- [1 - Overall Architecture](Public%20Notes/1%20-%20Overall%20Architecture.md) - High-level system diagram and goals.
-- [Inputs](Public%20Notes/Inputs.md) - Bluetooth, wired USB, and button input requirements.
-- [On Device](Public%20Notes/On%20Device.md) - Power, display, and controller requirements.
-- [Outputs](Public%20Notes/Outputs.md) - Output features.
+	subgraph Functions_/_Outputs
+	FO1(Pomodoro Timer)
+	FO2(Media Display)
+	end
+
+	Inputs --> On_Device --> Functions_/_Outputs
+```
 
 ## Altium Project
 
