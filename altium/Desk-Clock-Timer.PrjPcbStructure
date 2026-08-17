@@ -1,1 +1,4 @@
-Record=TopLevelDocument|FileName=Sheet1.SchDoc|SheetNumber=1
+Record=TopLevelDocument|FileName=01_TOP_LEVEL.SchDoc|SheetNumber=1
+Record=SheetSymbol|SourceDocument=01_TOP_LEVEL.SchDoc|Designator=DISPLAY|SchDesignator=DISPLAY|FileName=04_DISPLAY.SchDoc|SheetNumber=4|SymbolType=Normal|RawFileName=04_DISPLAY.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=01_TOP_LEVEL.SchDoc|Designator=MCU|SchDesignator=MCU|FileName=03_MCU.SchDoc|SheetNumber=3|SymbolType=Normal|RawFileName=03_MCU.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=01_TOP_LEVEL.SchDoc|Designator=POWER|SchDesignator=POWER|FileName=02_POWER.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=02_POWER.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
