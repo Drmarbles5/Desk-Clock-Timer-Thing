@@ -6,7 +6,7 @@ Compact STM32-controlled Bluetooth desk clock powered over USB-C with a [4200 mA
 
 ## Architecture
 
-```mermaidE-ink display
+```mermaid
 flowchart TD
 	subgraph Inputs
 	I1("`Laptop/Computer (wired)`")
