@@ -6,7 +6,7 @@ Compact STM32-controlled Bluetooth desk clock powered over USB-C with a [4200 mA
 
 ## Architecture
 
-```mermaidE-ink display
+```mermaid
 flowchart TD
 	subgraph Inputs
 	I1("`Laptop/Computer (wired)`")
@@ -53,8 +53,8 @@ the 2400–2480 MHz operating band.
 
 ### E-Ink Boost Converter
 
-The E-ink display requires a higher drive voltage than the 3.3 V rail. A **boost
-converter** steps the battery/rail voltage up to the display's operating level. The boost
+The E-ink display requires a higher drive voltage than the 3.3 V rail. A boost
+converter steps the battery/rail voltage up to the display's operating level or about 22V. The boost
 switching node and inductor loop are kept tight, short and away from the RF traces to minimize 
 EMI and switching losses.
 
