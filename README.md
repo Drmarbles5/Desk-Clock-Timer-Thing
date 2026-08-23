@@ -1,16 +1,25 @@
 # Desk Clock Timer
 
-Compact STM32-controlled Bluetooth desk clock powered over USB-C with a [4200 mAh lithium battery](https://www.amazon.ca/4200mah-Rechargeable-Lithium-Replacement-Electronic/dp/B095BP7V1D?th=1) for portability. It connects to Windows/Linux over USB and Bluetooth for time sync, alarm setup, and media data, and drives a [7.5 inch E-ink display](https://www.waveshare.com/product/7.5inch-e-paper-b.htm) to show the clock, Pomodoro timer, and live Spotify/media information.
+Compact STM32-controlled Bluetooth desk clock powered over USB-C with a [4200 mAh lithium battery](https://www.amazon.ca/4200mah-Rechargeable-Lithium-Replacement-Electronic/dp/B095BP7V1D?th=1) for portability. It connects to Windows/Linux over USB and Bluetooth Low Energy (BLE) for time sync, alarm setup, and media data, and drives a [7.5 inch E-ink display](https://www.waveshare.com/product/7.5inch-e-paper-b.htm) to show the clock, Pomodoro timer, and live Spotify/media information.
 
-> Firmware is in progress. Images coming soon.
+<br>
+<div align="left">
+  <img src="assets/PCB3D.png" alt="3D" height="500px">
+  <img src="assets/PCB.jpg" alt="PCB" height="500px">
+</div>
+<br>
+
+Soldering the flat flexible cable connector for display was difficult and a few pads were unfortunately destroyed. Everything will be resoldered on a spare PCB in the near future.
 
 ## Status
 
-- **Bluetooth:** Tested and working. The board advertises as `DCLKTIM` and is discoverable in [nRF Connect](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-Desktop).
+> Firmware is in progress.
+
+- **Bluetooth Low Energy:** Tested and working. The board advertises as `DCLKTIM` and is discoverable in [nRF Connect](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-Desktop).
 - **LED control over BLE:** Working. Writing to the P2P Server characteristic toggles the blue user LED. The payload is one byte:
   - `0x01` → LED on
   - `0x00` → LED off
-- **Display & battery:** Not yet tested. The 7.5" E-ink display and the 4200 mAh Li-ion battery have **not** been purchased yet since they were pretty expensive. Planning to get them in the near future.
+- **Display & battery:** Not yet tested. The 7.5" E-ink display and the 4200 mAh Li-ion battery have **not** been purchased yet since they were pretty expensive. Planning to get them soon.
 
 ## Next Steps
 
