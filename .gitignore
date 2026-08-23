@@ -18,7 +18,6 @@ Debug/
 Release/
 cubemx/
 *.o
-*.elf
 *.bin
 *.hex
 *.map
