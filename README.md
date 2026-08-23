@@ -87,7 +87,7 @@ EMI and switching losses.
 ### USB-C Differential Pair
 
 - USB connection is routed as a 90-ohm differential pair for the D+/D− signals. It is length matched 
-and tightly coupled
+and tightly coupled.
 - USB D+/D− data lines are protected against electrostatic discharge with a TVS diode array
   placed to clamp ESD transients before they reach the transceiver.
 
