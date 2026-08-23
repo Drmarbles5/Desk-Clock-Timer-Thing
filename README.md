@@ -4,9 +4,9 @@ Compact STM32-controlled Bluetooth desk clock powered over USB-C with a [4200 mA
 
 <br>
 <div align="left">
-  <img src="assets/PCB3D.png" alt="3D" width="600px">
+  <img src="assets/PCB3D.png" alt="3D" width="800px">
   <br>
-  <img src="assets/PCB.jpg" alt="PCB" width="600px">
+  <img src="assets/PCB.jpg" alt="PCB" width="800px">
 </div>
 <br>
 
